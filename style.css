@@ -1,0 +1,89 @@
+:root{
+  --my-gray: #a1a1a1;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #042925;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  width:  100%;
+  max-width: 30rem;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  font: inherit;
+  padding: 1.25rem;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  color: #ffff;
+  background: #191a1b;
+  border: 0.125rem solid transparent;
+  border-radius: 1.125rem;
+  transition: border-color 0.5s;
+  box-shadow: 0.5s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border-color: rgb(45, 204, 151);
+  box-shadow: 0 0 0 0.2125rem #162b23;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color: #a1a1a1;
+}
+
+textarea {
+  min-height: 12.0rem;
+  resize: vertical;
+}
+
+button {
+  border: none;
+  border-radius: 99px;
+  color: white;
+  background: var(--my-gray);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover, 
+button:focus {
+  outline: none;
+  background: #7a7a7a;
+}
+
+button:desabled {
+  cursor: not-allowed;
+  background: #2e2e2e;
+}
+  
